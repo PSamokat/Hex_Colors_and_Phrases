@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+* {
+  font-family: "Aeroport Medium";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+}
+
+.hex-colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  border: blueviolet solid 10px;
+  border-radius: 10px;
+  box-shadow:  0px 2px 6px 0px black;
+
+  background: white;
+
+  margin-bottom: 20px;
+  padding: 20px;
+
+  height: 400px;
+  width: 800px;
+}
+
+.hex-colors h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: colorchange 10s infinite alternate;
+}
+
+.hex-colors h2 {
+  font-size:  2rem;
+}
+
+@keyframes colorchange {
+  0% {
+    color: red;
+  }
+  20% {
+    color: orange;
+  }
+  40% {
+    color: yellow;
+  }
+  60% {
+    color: green;
+  }
+  80% {
+    color: blue;
+  }
+  100% {
+    color: indigo;
+  }
+}
+
+@media (max-width: 480px) {
+  .hex-colors h1 {
+    font-size: 1.5rem;
+  }
+
+  .hex-colors h2 {
+    font-size: 1.5rem;
+  }
+}
